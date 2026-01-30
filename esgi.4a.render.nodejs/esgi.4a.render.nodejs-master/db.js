@@ -1,10 +1,7 @@
-require('dotenv').config();
 const { Sequelize } = require('sequelize')
 
-const URL = process.env.DATABASE_URL;
-
 // Database
-const sequelize = new Sequelize(URL);
+const sequelize = new Sequelize(DATABASE_URL);
 
 // Database initialization
 async function initDatabase() {
