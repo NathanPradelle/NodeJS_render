@@ -9,7 +9,7 @@ To do this exercise, you must read carefully the given documentations and rules.
   - Deploy your project to an online Git repository
   - Link your service to your Git repository
   - Configure properly the service to retrieve dependencies and start your project
-- Enable the users routes and database connection
+  - Enable the users routes and database connection
   - Create a PostgreSQL on Render
   - Link your service to the database without using direct credentials
 
