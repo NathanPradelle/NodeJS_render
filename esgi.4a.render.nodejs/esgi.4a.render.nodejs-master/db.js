@@ -4,22 +4,7 @@ const { Sequelize } = require('sequelize')
 const URL = process.env.DATABASE_URL;
 
 // Database
-const sequelize = new Sequelize(
-  {
-    URL,
-    dialect: 'postgres',
-    dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      },
-    },
-    define: {
-      createdAt: 'added',
-      updatedAt: 'updated',
-    }
-  },
-)
+const sequelize = new Sequelize(URL);
 
 // Database initialization
 async function initDatabase() {
